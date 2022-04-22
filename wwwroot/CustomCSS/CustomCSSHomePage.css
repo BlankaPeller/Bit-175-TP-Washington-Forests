@@ -1,0 +1,6 @@
+/*Do not adjust Sizing or Postitioning. It affects the responsive nature of Bootstrap*/ 
+/*Exception: adjusting heights/widths (must use em, rem, vh, vw or percentages)*/
+
+.SliderHeight {
+    max-height: 30vh;
+}
