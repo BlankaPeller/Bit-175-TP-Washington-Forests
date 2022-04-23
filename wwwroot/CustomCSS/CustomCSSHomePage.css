@@ -4,3 +4,25 @@
 .SliderHeight {
     max-height: 30vh;
 }
+
+/*Adds custom style to navbar*/
+.mainNav{
+    background-color: #4EAEAD;
+    min-height: 11vh;
+}
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 4vh;
+    max-width: 10vh;
+    height: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5vh;
+}
