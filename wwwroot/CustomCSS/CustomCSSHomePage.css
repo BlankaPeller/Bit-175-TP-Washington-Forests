@@ -1,45 +1,191 @@
 /*Do not adjust Sizing or Postitioning. It affects the responsive nature of Bootstrap*/ 
 /*Exception: adjusting heights/widths (must use em, rem, vh, vw or percentages)*/
 
-.SliderHeight {
-    max-height: 30vh;
+/*Base them style */
+p{
+    padding: 0;
+    margin: 0;
 }
 
+/*Carousel*/
+.logo{
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 20%;
+}
+#logoImage{
+    width: 25%;
+}
+#logoTitle{
+    color:rgb(231, 243, 244);
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2em;
+}
+@media screen and (min-width: 995px) {
+    #logoImage{
+        width: 30%;
+    }
+    #logoTitle{
+        color:rgb(231, 243, 244);
+        font-family: brandon-grotesque, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 7.5em;
+    }
+}
+.customCarousel{
+    height: 100% !important;
+}
 /*Adds custom style to navbar*/
 .mainNav{
-    background-color: #4eae80;
-    min-height: 11vh;
+    background-color: #ffffff;
 }
-#logo{
+.nav-choice{
+    color: #1c2327 !important;
+    font-size: 1.5em;
+    padding-right: 2vh !important;
+    font-weight: 600;
+}
+.nav-choice:hover{
+    color: #4d9c96 !important;
+}
+.active{
+    font-weight: 900;
+}
+@media screen and (min-width: 995px){
+    .mainNav{
+        position: absolute;
+        background-color: #052d2380 !important;
+        width: 100%;
+        min-height: 5vh;
+        z-index: 3;
+    }
+    .nav-choice{
+        color: #ffffff !important;
+    }
+    .nav-choice:hover{
+        color: #b1eee9 !important;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+#navLogo{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 4vh;
-    max-width: 10vh;
-    height: auto;
-
+    left: 100;
+    right: 0;
+    padding-right: 20px;
 }
-.title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 5vh;
+/*Style for main content */
+main h1, main h2, main p{
+    color: #2c1103;
+}
+main p{
+    font-size: 1.2em;
+}
+.whiteSection{
+    background-color: #e9f1e4;
+}
+.greenSection{
+    background-color: #cee0c2;
+}
+.section1{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.section1 p{
+    max-width: 70vh;
+    min-width: 30vh;
+    margin: 0 auto;
+}
+.section1 h1{
+    text-align: center;
+    font-size: 1.6em;
+}
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    justify-content: center;
+}
+.ServiceSection{
+    background-color: #f7faf5;
+    width: 400x;
+    height: 50vh;
+    margin: 40px;
+    padding: 10px;
+    padding-top: 25px;
+    text-align: center;
+}
+@media screen and (min-width: 995px){
+    .ServiceSection{
+        width: 400x;
+        height: 35vh;
+    }
+}
+.ServiceSection h2{
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: 5px;
+}
+.ServiceSection p{
+    width: 25vh;
+    font-size: 1em;
+    margin: 0;
+    padding-top: 5px;
+}
+.serviceImg{
+    width: 25vh;
 }
 
-
+/*Style for footer*/
+.bottomLinks{
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 0;
+}
+.bottomLinks li{
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: solid 3px #ffffff;
+}
+.bottomLinks li:first-child{
+    border: none;
+}
+@media screen and (min-width: 995px){
+    .bottomLinks li{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.bottom-nav{
+    text-decoration: none;
+    color: #ffffff;
+}
+.bottom-nav:hover{
+    color: #4d9c96 !important;
+}
 footer{
-    background-color: #4eae80;
+    background-color: #052d23;
     min-height: 11vh;
 }
-#logo-bottom{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    max-width: 10vh;
-    height: auto;
+footer p{
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
 }
 .footerDiv{
     margin: auto;
@@ -47,12 +193,23 @@ footer{
     text-align: center;
     padding-bottom: 2vh;
 }
+.footerDiv p{
+    padding-bottom: 2px;
+}
 .socialMedia{
     padding-left: 0px;
+    padding-top: 2px;
 }
 .socialMedia li{
     display: inline;
     padding-left: 1vh;
     padding-right: 1vh;
     list-style: none;
+}
+.icon:hover, #up:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}.icon:active, #up:active{
+    opacity: 75%;
 }
